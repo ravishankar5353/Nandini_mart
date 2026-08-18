@@ -90,7 +90,7 @@ export const AuthPage = () => {
               <ShoppingBag className="w-7 h-7 text-white" />
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">
-              NANDINI<span className="text-emerald-400">MART</span>
+              MNM<span className="text-emerald-400">MART</span>
             </h1>
             <p className="text-emerald-300/60 text-xs font-medium mt-1">
               Fresh Groceries · Doorstep Delivery
@@ -164,7 +164,7 @@ export const AuthPage = () => {
 
                 {/* Demo credentials hint */}
                 <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300">
-                  <span className="font-bold">Demo:</span> nandini@nandinimart.com / any password
+                  <span className="font-bold">Demo:</span> mnm@mnmmart.com / any password
                 </div>
 
                 <button
@@ -184,7 +184,7 @@ export const AuthPage = () => {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Nandini Sharma"
+                      placeholder="e.g. MNM User"
                       value={signupForm.name}
                       onChange={e => setSignupForm({ ...signupForm, name: e.target.value })}
                       className="w-full bg-white/8 border border-white/15 text-white placeholder:text-slate-500 rounded-xl pl-10 pr-4 py-2.5 text-sm outline-none focus:border-emerald-500 transition-all font-medium"
@@ -273,7 +273,7 @@ export const AuthPage = () => {
               <div className="flex items-center justify-center gap-1.5 text-xs text-slate-500">
                 <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
                 <span>Developed by</span>
-                <span className="font-black text-emerald-400">NANDINI</span>
+                <span className="font-black text-emerald-400">MNM</span>
                 <Heart className="w-3 h-3 fill-rose-500 text-rose-500" />
               </div>
             </div>

@@ -55,10 +55,10 @@ export const Footer = () => {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-black text-lg shadow-md shadow-emerald-600/30">
-                N
+                M
               </div>
               <span className="font-black text-2xl tracking-tight text-white">
-                NANDINI<span className="text-emerald-500">MART</span>
+                MNM<span className="text-emerald-500">MART</span>
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
@@ -112,11 +112,11 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-slate-400">
                 <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span>1800-NANDINI-MART</span>
+                <span>1800-MNM-MART</span>
               </li>
               <li className="flex items-center gap-2 text-slate-400">
                 <Mail className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span>support@nandinimart.com</span>
+                <span>support@mnmmart.com</span>
               </li>
               <li className="flex items-center gap-2 text-slate-400">
                 <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
@@ -129,14 +129,14 @@ export const Footer = () => {
         {/* Prominent Attribution & Copyright */}
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
           <div className="text-slate-400 text-center md:text-left">
-            © 2026 <strong className="text-white">NANDINI MART</strong>. All Rights Reserved. Fresh Groceries Delivered to Your Doorstep.
+            © 2026 <strong className="text-white">MNM MART</strong>. All Rights Reserved. Fresh Groceries Delivered to Your Doorstep.
           </div>
 
-          {/* Prominent Developed by NANDINI badge */}
+          {/* Prominent Developed by MNM Team 🚀 badge */}
           <div className="flex items-center gap-2 px-4 py-2 rounded-2xl bg-gradient-to-r from-emerald-900 to-teal-900 border border-emerald-700/80 shadow-lg shadow-emerald-950/40">
             <span className="text-slate-300 font-medium">Project Crafted &</span>
             <span className="font-black text-emerald-300 text-sm tracking-wide flex items-center gap-1.5">
-              Developed by NANDINI <Heart className="w-4 h-4 fill-rose-500 text-rose-500" />
+              Developed by MNM Team 🚀 <Heart className="w-4 h-4 fill-rose-500 text-rose-500" />
             </span>
           </div>
         </div>

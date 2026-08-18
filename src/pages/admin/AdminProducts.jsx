@@ -187,7 +187,7 @@ export const AdminProducts = () => {
                 </div>
                 <div>
                   <label className="text-xs font-bold text-slate-300 block mb-1">Brand</label>
-                  <input value={form.brand} onChange={e => setForm(f => ({ ...f, brand: e.target.value }))} placeholder="e.g. Nandini Farm" className="w-full bg-slate-800 border border-white/10 text-white placeholder:text-slate-500 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-emerald-500" />
+                  <input value={form.brand} onChange={e => setForm(f => ({ ...f, brand: e.target.value }))} placeholder="e.g. MNM Farm" className="w-full bg-slate-800 border border-white/10 text-white placeholder:text-slate-500 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-emerald-500" />
                 </div>
                 <div>
                   <label className="text-xs font-bold text-slate-300 block mb-1">Price (₹) *</label>

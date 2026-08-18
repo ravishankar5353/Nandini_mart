@@ -48,7 +48,7 @@ export const OrdersPage = () => {
           <span>My Orders</span>
         </h1>
         <p className="text-xs md:text-sm text-slate-500 mt-0.5">
-          View all your previous and active NANDINI MART doorstep deliveries.
+          View all your previous and active MNM MART doorstep deliveries.
         </p>
       </div>
 
@@ -207,7 +207,7 @@ export const OrdersPage = () => {
 
             <div className="space-y-3 text-xs">
               <div className="p-3 rounded-xl bg-slate-50 space-y-1">
-                <p className="font-bold text-slate-900">NANDINI MART Doorstep Groceries</p>
+                <p className="font-bold text-slate-900">MNM MART Doorstep Groceries</p>
                 <p className="text-slate-500">GSTIN: 29AAAAA0000A1Z5 &middot; CIN: U52100KA2026PTC</p>
                 <p className="text-slate-500">Doorstep Delivery Partner: {selectedInvoiceOrder.deliveryPartner?.name || 'Ramesh Kumar'}</p>
               </div>

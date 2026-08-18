@@ -3,7 +3,7 @@ import { useToast } from './ToastContext';
 import { useCart } from './CartContext';
 
 const WishlistContext = createContext();
-const WISHLIST_STORAGE_KEY = 'nandini_mart_wishlist_v1';
+const WISHLIST_STORAGE_KEY = 'mnm_mart_wishlist_v1';
 
 export const WishlistProvider = ({ children }) => {
   const [wishlist, setWishlist] = useState(() => {

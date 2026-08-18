@@ -44,7 +44,7 @@ export const AdminLoginPage = () => {
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">Admin Portal</h1>
             <p className="text-emerald-300/60 text-xs font-medium mt-1">
-              NANDINI MART · Restricted Access
+              MNM MART · Restricted Access
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export const AdminLoginPage = () => {
               <div className="font-black text-emerald-300 mb-1 flex items-center gap-1.5"><Shield className="w-3.5 h-3.5" /> Admin Credentials</div>
               <div className="text-emerald-200/70">
                 <span className="font-semibold">Email:</span> admin@cse.in<br />
-                <span className="font-semibold">Password:</span> nandini123
+                <span className="font-semibold">Password:</span> mnm123
               </div>
             </div>
 
@@ -113,7 +113,7 @@ export const AdminLoginPage = () => {
               <div className="flex items-center justify-center gap-1.5 text-xs text-slate-500">
                 <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
                 <span>Developed by</span>
-                <span className="font-black text-emerald-400">NANDINI</span>
+                <span className="font-black text-emerald-400">MNM</span>
                 <Heart className="w-3 h-3 fill-rose-500 text-rose-500" />
               </div>
             </div>

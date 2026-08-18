@@ -1,13 +1,13 @@
 export const INITIAL_USER = {
   id: 'usr-001',
-  name: 'Nandini Sharma',
-  email: 'nandini@nandinimart.com',
+  name: 'MNM User',
+  email: 'mnm@mnmmart.com',
   phone: '+91 98765 43210',
   avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
   addresses: [
     {
       id: 'addr-1',
-      fullName: 'Nandini Sharma',
+      fullName: 'MNM User',
       phone: '9876543210',
       houseNo: 'Flat 402, Green Meadows Heights',
       street: '14th Main Road, Near Rose Garden',
@@ -20,7 +20,7 @@ export const INITIAL_USER = {
     },
     {
       id: 'addr-2',
-      fullName: 'Nandini Sharma (Office)',
+      fullName: 'MNM User (Office)',
       phone: '9876543210',
       houseNo: 'Tech Park Tower 3, 5th Floor',
       street: 'Outer Ring Road, Bellandur',
@@ -36,13 +36,13 @@ export const INITIAL_USER = {
 
 export const INITIAL_ORDERS = [
   {
-    id: 'NDN-2026-88412',
+    id: 'MNM-2026-88412',
     date: '2026-08-18T10:30:00.000Z',
     status: 'Out for Delivery',
     statusCode: 3, // 1: Placed, 2: Packed/Preparing, 3: Out for Delivery, 4: Delivered
     deliveryMethod: '🏠 Doorstep Delivery — Mandatory',
     address: {
-      fullName: 'Nandini Sharma',
+      fullName: 'MNM User',
       phone: '9876543210',
       houseNo: 'Flat 402, Green Meadows Heights',
       street: '14th Main Road, Near Rose Garden',
@@ -63,7 +63,7 @@ export const INITIAL_ORDERS = [
       },
       {
         id: 'prod-013',
-        name: 'Nandini Toned Fresh Milk (Pasteurized)',
+        name: 'MNM Toned Fresh Milk (Pasteurized)',
         price: 52,
         quantity: 2,
         unit: '1 Litre Pouch',
@@ -93,20 +93,20 @@ export const INITIAL_ORDERS = [
       otp: '4928'
     },
     timeline: [
-      { status: 'Order Placed', time: '10:30 AM', completed: true, desc: 'Your grocery order was received by NANDINI MART' },
+      { status: 'Order Placed', time: '10:30 AM', completed: true, desc: 'Your grocery order was received by MNM MART' },
       { status: 'Order Confirmed & Packed', time: '10:42 AM', completed: true, desc: 'Items checked, fresh packed & hygienically sealed' },
       { status: 'Out for Doorstep Delivery', time: '11:05 AM', completed: true, desc: 'Delivery partner Ramesh Kumar is on the way to your door' },
       { status: 'Delivered at Doorstep', time: 'Est. 11:30 AM', completed: false, desc: 'Will be handed directly at your doorstep' }
     ]
   },
   {
-    id: 'NDN-2026-79104',
+    id: 'MNM-2026-79104',
     date: '2026-08-15T16:15:00.000Z',
     status: 'Delivered',
     statusCode: 4,
     deliveryMethod: '🏠 Doorstep Delivery — Mandatory',
     address: {
-      fullName: 'Nandini Sharma',
+      fullName: 'MNM User',
       phone: '9876543210',
       houseNo: 'Flat 402, Green Meadows Heights',
       street: '14th Main Road, Near Rose Garden',
@@ -135,7 +135,7 @@ export const INITIAL_ORDERS = [
       },
       {
         id: 'prod-040',
-        name: 'Nandini Pure Cow Desi Ghee',
+        name: 'MNM Pure Cow Desi Ghee',
         price: 315,
         quantity: 1,
         unit: '500 ml Jar',

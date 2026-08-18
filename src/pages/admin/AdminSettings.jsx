@@ -28,7 +28,7 @@ export const AdminSettings = () => {
   const [saved, setSaved] = useState(false);
 
   // Local editable copies
-  const [profile, setProfile] = useState({ name: adminUser?.name || 'Nandini Admin', email: 'admin@cse.in', phone: '9876543210' });
+  const [profile, setProfile] = useState({ name: adminUser?.name || 'MNM Admin', email: 'admin@cse.in', phone: '9876543210' });
   const [store, setStore] = useState(storeInfo);
   const [delivery, setDelivery] = useState(deliverySettings);
 
@@ -84,7 +84,7 @@ export const AdminSettings = () => {
             <Field label="Admin Email" value={profile.email} onChange={v => setProfile(p => ({ ...p, email: v }))} icon={Mail} type="email" />
             <Field label="Phone" value={profile.phone} onChange={v => setProfile(p => ({ ...p, phone: v }))} icon={Phone} />
             <div className="p-3 bg-amber-500/10 border border-amber-500/20 rounded-xl text-xs text-amber-300 font-semibold">
-              ⚠️ Admin password changes require backend authentication. Current: admin@cse.in / nandini123
+              ⚠️ Admin password changes require backend authentication. Current: admin@cse.in / mnm123
             </div>
           </>
         )}
@@ -157,8 +157,8 @@ export const AdminSettings = () => {
       <div className="text-center pt-2">
         <div className="flex items-center justify-center gap-1.5 text-xs text-slate-600">
           <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
-          <span>NANDINI MART · Developed by</span>
-          <span className="font-black text-slate-500">NANDINI</span>
+          <span>MNM MART · Developed by</span>
+          <span className="font-black text-slate-500">MNM</span>
           <Heart className="w-3 h-3 fill-rose-600 text-rose-600" />
         </div>
       </div>

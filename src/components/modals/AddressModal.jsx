@@ -36,7 +36,7 @@ export const AddressModal = () => {
       });
     } else {
       setFormData({
-        fullName: 'Nandini Sharma',
+        fullName: 'MNM User',
         phone: '9876543210',
         houseNo: 'Flat 402, Green Meadows Heights',
         street: '14th Main Road, Near Rose Garden',

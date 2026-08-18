@@ -51,14 +51,14 @@ export const OrderSuccessPage = () => {
         <div className="space-y-1.5">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-black uppercase tracking-wider border border-emerald-200">
             <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Order #{orderId || 'NDN-2026-88941'}</span>
+            <span>Order #{orderId || 'MNM-2026-88941'}</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl font-black text-slate-900">
             🎉 Order Placed Successfully!
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 font-medium">
-            Thank you for shopping with <strong className="text-slate-900">NANDINI MART</strong>.
+            Thank you for shopping with <strong className="text-slate-900">MNM MART</strong>.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export const OrderSuccessPage = () => {
         {/* Action Buttons */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
           <Link
-            to={`/track-order/${orderId || 'NDN-2026-88941'}`}
+            to={`/track-order/${orderId || 'MNM-2026-88941'}`}
             className="py-3.5 px-6 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-extrabold text-sm shadow-md shadow-emerald-700/20 transition-all flex items-center justify-center gap-2 active:scale-98"
           >
             <Truck className="w-4 h-4" />

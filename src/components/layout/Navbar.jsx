@@ -62,7 +62,7 @@ export const Navbar = () => {
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500 text-slate-950 font-extrabold text-[11px] tracking-wide shadow-sm">
               <Sparkles className="w-3 h-3 text-slate-950" />
-              Developed by NANDINI ❤️
+              Developed by MNM Team 🚀
             </span>
             <Link to="/orders" className="text-slate-300 hover:text-emerald-400 font-semibold transition-colors hidden sm:inline">
               Track Order
@@ -96,7 +96,7 @@ export const Navbar = () => {
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1.5">
                     <span className="font-black text-xl md:text-2xl tracking-tight text-slate-900 leading-none">
-                      NANDINI<span className="text-emerald-600">MART</span>
+                      MNM<span className="text-emerald-600">MART</span>
                     </span>
                   </div>
                   <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-0.5">
@@ -175,8 +175,8 @@ export const Navbar = () => {
                     onClick={() => setIsUserMenuOpen(false)}
                   >
                     <div className="px-4 py-2 border-b border-slate-100">
-                      <p className="text-xs font-bold text-slate-900">{user?.name || 'Nandini Sharma'}</p>
-                      <p className="text-[11px] text-slate-500 truncate">{user?.email || 'nandini@nandinimart.com'}</p>
+                      <p className="text-xs font-bold text-slate-900">{user?.name || 'MNM User'}</p>
+                      <p className="text-[11px] text-slate-500 truncate">{user?.email || 'mnm@mnmmart.com'}</p>
                     </div>
 
                     <Link

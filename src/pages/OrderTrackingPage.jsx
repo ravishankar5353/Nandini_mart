@@ -94,7 +94,7 @@ export const OrderTrackingPage = () => {
                 <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">
                   Dispatched From
                 </span>
-                <span className="font-bold text-sm text-white">NANDINI MART Central Hub</span>
+                <span className="font-bold text-sm text-white">MNM MART Central Hub</span>
                 <span className="text-[11px] text-slate-400 block">Temperature Controlled</span>
               </div>
             </div>
@@ -160,7 +160,7 @@ export const OrderTrackingPage = () => {
               {
                 step: 1,
                 title: 'Order Placed',
-                desc: 'Received by NANDINI MART',
+                desc: 'Received by MNM MART',
                 time: '10:30 AM',
                 isDone: statusCode >= 1
               },

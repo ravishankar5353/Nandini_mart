@@ -19,18 +19,18 @@ export const AuthModal = () => {
     e.preventDefault();
     setLoading(true);
     if (isLoginMode) {
-      await login(formData.email || formData.phone || 'nandini@nandinimart.com', formData.password || 'password123');
+      await login(formData.email || formData.phone || 'mnm@mnmmart.com', formData.password || 'password123');
     } else {
       await signup(formData);
     }
     setLoading(false);
   };
 
-  const fillDemoAccount = (type = 'nandini') => {
-    if (type === 'nandini') {
+  const fillDemoAccount = (type = 'mnm') => {
+    if (type === 'mnm') {
       setFormData({
-        name: 'Nandini Sharma',
-        email: 'nandini@nandinimart.com',
+        name: 'MNM User',
+        email: 'mnm@mnmmart.com',
         phone: '9876543210',
         password: 'password123'
       });
@@ -59,11 +59,11 @@ export const AuthModal = () => {
 
           <div className="flex items-center gap-2 mb-2">
             <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/30 text-emerald-200 text-[11px] font-bold tracking-wider uppercase border border-emerald-400/30">
-              NANDINI MART Account
+              MNM MART Account
             </span>
           </div>
           <h2 className="text-2xl font-black text-white">
-            {isLoginMode ? 'Welcome Back!' : 'Join NANDINI MART'}
+            {isLoginMode ? 'Welcome Back!' : 'Join MNM MART'}
           </h2>
           <p className="text-xs text-emerald-200 mt-1">
             {isLoginMode
@@ -81,10 +81,10 @@ export const AuthModal = () => {
           <div className="flex gap-1.5">
             <button
               type="button"
-              onClick={() => fillDemoAccount('nandini')}
+              onClick={() => fillDemoAccount('mnm')}
               className="text-[11px] font-bold px-2.5 py-1 rounded-lg bg-white hover:bg-emerald-600 hover:text-white text-emerald-800 border border-emerald-200 shadow-xs transition-colors"
             >
-              Nandini
+              MNM
             </button>
             <button
               type="button"
@@ -108,7 +108,7 @@ export const AuthModal = () => {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Nandini Sharma"
+                  placeholder="e.g. MNM User"
                   value={formData.name}
                   onChange={e => setFormData({ ...formData, name: e.target.value })}
                   className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 text-sm outline-none font-medium"
@@ -126,7 +126,7 @@ export const AuthModal = () => {
               <input
                 type="email"
                 required
-                placeholder="nandini@nandinimart.com"
+                placeholder="mnm@mnmmart.com"
                 value={formData.email}
                 onChange={e => setFormData({ ...formData, email: e.target.value })}
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 text-sm outline-none font-medium"
@@ -179,7 +179,7 @@ export const AuthModal = () => {
               <span className="inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
             ) : (
               <>
-                <span>{isLoginMode ? 'Log In to Nandini Mart' : 'Create My Account'}</span>
+                <span>{isLoginMode ? 'Log In to MNM Mart' : 'Create My Account'}</span>
                 <ArrowRight className="w-4 h-4" />
               </>
             )}

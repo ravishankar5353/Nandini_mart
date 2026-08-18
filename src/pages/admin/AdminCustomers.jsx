@@ -4,19 +4,19 @@ import { useAdmin } from '../../context/AdminContext';
 
 const DEMO_CUSTOMERS = [
   {
-    id: 'u1', name: 'Nandini Sharma', email: 'nandini@nandinimart.com', phone: '9876543210',
+    id: 'u1', name: 'MNM User', email: 'mnm@mnmmart.com', phone: '9876543210',
     address: 'Flat 402, Green Meadows Heights, Indiranagar, Bengaluru — 560038',
-    joinedAt: '2026-08-01', orders: 5, totalSpent: 3420, lastOrder: 'NDN-2026-DEMO01'
+    joinedAt: '2026-08-01', orders: 5, totalSpent: 3420, lastOrder: 'MNM-2026-DEMO01'
   },
   {
     id: 'u2', name: 'Priya Mehta', email: 'priya@gmail.com', phone: '9123456780',
     address: 'Plot 12, Jayanagar, Bengaluru — 560041',
-    joinedAt: '2026-08-10', orders: 2, totalSpent: 998, lastOrder: 'NDN-2026-DEMO02'
+    joinedAt: '2026-08-10', orders: 2, totalSpent: 998, lastOrder: 'MNM-2026-DEMO02'
   },
   {
     id: 'u3', name: 'Rahul Verma', email: 'rahul@gmail.com', phone: '9988776655',
     address: 'HSR Layout, Sector 2, Bengaluru — 560102',
-    joinedAt: '2026-08-15', orders: 1, totalSpent: 349, lastOrder: 'NDN-2026-DEMO03'
+    joinedAt: '2026-08-15', orders: 1, totalSpent: 349, lastOrder: 'MNM-2026-DEMO03'
   },
 ];
 

@@ -56,7 +56,7 @@ export const AdminLayout = () => {
               <ShoppingBag className="w-5 h-5 text-white" />
             </div>
             <div>
-              <div className="text-white font-black text-sm tracking-tight">NANDINI<span className="text-emerald-400">MART</span></div>
+              <div className="text-white font-black text-sm tracking-tight">MNM<span className="text-emerald-400">MART</span></div>
               <div className="text-emerald-400 text-[10px] font-bold uppercase tracking-wide flex items-center gap-1">
                 <Shield className="w-2.5 h-2.5" /> Admin Panel
               </div>
@@ -114,7 +114,7 @@ export const AdminLayout = () => {
             <div className="flex items-center justify-center gap-1 text-[10px] text-slate-600">
               <Sparkles className="w-2.5 h-2.5 text-emerald-600" />
               <span>Developed by</span>
-              <span className="font-black text-slate-500">NANDINI</span>
+              <span className="font-black text-slate-500">MNM</span>
               <Heart className="w-2.5 h-2.5 fill-rose-600 text-rose-600" />
             </div>
           </div>
@@ -134,7 +134,7 @@ export const AdminLayout = () => {
 
           <div className="flex-1 flex items-center gap-2">
             <Truck className="w-4 h-4 text-emerald-500" />
-            <span className="text-slate-400 text-xs font-semibold hidden sm:block">NANDINI MART — Admin Dashboard</span>
+            <span className="text-slate-400 text-xs font-semibold hidden sm:block">MNM MART — Admin Dashboard</span>
           </div>
 
           <div className="flex items-center gap-2">

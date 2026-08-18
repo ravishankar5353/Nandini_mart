@@ -272,7 +272,7 @@ export const CartPage = () => {
               <form onSubmit={handleApplyCoupon} className="flex gap-2">
                 <input
                   type="text"
-                  placeholder="e.g. NANDINI50, FREEDELIVERY"
+                  placeholder="e.g. MNM50, FREEDELIVERY"
                   value={couponInput}
                   onChange={(e) => setCouponInput(e.target.value)}
                   className="flex-1 px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs uppercase font-bold outline-none focus:border-emerald-600"
@@ -291,10 +291,10 @@ export const CartPage = () => {
               <div className="flex flex-wrap gap-1.5 pt-1">
                 <button
                   type="button"
-                  onClick={() => applyCoupon('NANDINI50')}
+                  onClick={() => applyCoupon('MNM50')}
                   className="text-[10px] font-bold px-2 py-0.5 bg-emerald-50 text-emerald-800 rounded-md border border-emerald-200"
                 >
-                  NANDINI50 (₹50 off)
+                  MNM50 (₹50 off)
                 </button>
                 <button
                   type="button"

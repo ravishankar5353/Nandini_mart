@@ -1,6 +1,6 @@
 import { INITIAL_USER } from '../data/initialData';
 
-const USER_STORAGE_KEY = 'nandini_mart_user_v1';
+const USER_STORAGE_KEY = 'mnm_mart_user_v1';
 const delay = (ms = 250) => new Promise(resolve => setTimeout(resolve, ms));
 
 const getStoredUser = () => {
@@ -47,8 +47,8 @@ export const userApi = {
     const user = getStoredUser();
     const newUser = {
       ...user,
-      name: userData.name || 'Nandini Customer',
-      email: userData.email || 'customer@nandinimart.com',
+      name: userData.name || 'MNM Customer',
+      email: userData.email || 'customer@mnmmart.com',
       phone: userData.phone || '+91 98765 00000',
       isAuthenticated: true
     };

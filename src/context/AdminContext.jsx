@@ -5,13 +5,13 @@ export const useAdmin = () => useContext(AdminContext);
 
 const ADMIN_CREDENTIALS = {
   email: 'admin@cse.in',
-  password: 'nandini123',
-  name: 'Nandini Admin',
+  password: 'mnm123',
+  name: 'MNM Admin',
   role: 'Super Admin',
   avatar: null,
 };
 
-const ADMIN_STORE_KEY = 'nandini_mart_admin_v1';
+const ADMIN_STORE_KEY = 'mnm_mart_admin_v1';
 
 const getInitialAdminData = () => {
   try {
@@ -22,8 +22,8 @@ const getInitialAdminData = () => {
 };
 
 // ---------- Helper to get/sync orders/products from existing localStorage ----------
-const ORDERS_KEY = 'nandini_mart_orders_v1';
-const USERS_KEY = 'nandini_mart_user_v1';
+const ORDERS_KEY = 'mnm_mart_orders_v1';
+const USERS_KEY = 'mnm_mart_user_v1';
 
 const getOrders = () => {
   try {
@@ -45,10 +45,10 @@ export const AdminProvider = ({ children }) => {
   const [adminUser, setAdminUser] = useState(getInitialAdminData);
   const [coupons, setCoupons] = useState(() => {
     try {
-      const raw = localStorage.getItem('nandini_mart_coupons_v1');
+      const raw = localStorage.getItem('mnm_mart_coupons_v1');
       return raw ? JSON.parse(raw) : [
-        { id: 'c1', code: 'NANDINI50', discount: 50, type: 'flat', minOrder: 299, expiry: '2026-12-31', active: true, uses: 12 },
-        { id: 'c2', code: 'NANDINI100', discount: 100, type: 'flat', minOrder: 599, expiry: '2026-12-31', active: true, uses: 7 },
+        { id: 'c1', code: 'MNM50', discount: 50, type: 'flat', minOrder: 299, expiry: '2026-12-31', active: true, uses: 12 },
+        { id: 'c2', code: 'MNM100', discount: 100, type: 'flat', minOrder: 599, expiry: '2026-12-31', active: true, uses: 7 },
         { id: 'c3', code: 'FREEDELIVERY', discount: 40, type: 'delivery', minOrder: 0, expiry: '2026-12-31', active: true, uses: 21 },
       ];
     } catch { return []; }
@@ -56,7 +56,7 @@ export const AdminProvider = ({ children }) => {
 
   const [reviews, setReviews] = useState(() => {
     try {
-      const raw = localStorage.getItem('nandini_mart_reviews_v1');
+      const raw = localStorage.getItem('mnm_mart_reviews_v1');
       return raw ? JSON.parse(raw) : [
         { id: 'r1', product: 'Organic Apples', customer: 'Priya S.', rating: 5, comment: 'Absolutely fresh! Delivered in 35 mins.', date: '2026-08-17', status: 'approved', productId: 'p1' },
         { id: 'r2', product: 'Tata Tea Gold', customer: 'Rahul M.', rating: 4, comment: 'Good quality, packaging was intact.', date: '2026-08-16', status: 'pending', productId: 'p2' },
@@ -68,7 +68,7 @@ export const AdminProvider = ({ children }) => {
 
   const [deliverySettings, setDeliverySettings] = useState(() => {
     try {
-      const raw = localStorage.getItem('nandini_mart_delivery_settings_v1');
+      const raw = localStorage.getItem('mnm_mart_delivery_settings_v1');
       return raw ? JSON.parse(raw) : {
         freeDeliveryAbove: 499,
         deliveryFee: 40,
@@ -81,13 +81,13 @@ export const AdminProvider = ({ children }) => {
 
   const [storeInfo, setStoreInfo] = useState(() => {
     try {
-      const raw = localStorage.getItem('nandini_mart_store_info_v1');
+      const raw = localStorage.getItem('mnm_mart_store_info_v1');
       return raw ? JSON.parse(raw) : {
-        name: 'NANDINI MART',
+        name: 'MNM MART',
         tagline: 'Fresh Groceries. Easy Shopping. Delivered to Your Doorstep.',
         address: 'Indiranagar, Bengaluru — 560038',
         phone: '+91 98765 43210',
-        email: 'support@nandinimart.com',
+        email: 'support@mnmmart.com',
         gst: 'GSTIN29AABCT1332L1ZX',
       };
     } catch { return {}; }
@@ -95,19 +95,19 @@ export const AdminProvider = ({ children }) => {
 
   // Persist coupons & reviews
   useEffect(() => {
-    localStorage.setItem('nandini_mart_coupons_v1', JSON.stringify(coupons));
+    localStorage.setItem('mnm_mart_coupons_v1', JSON.stringify(coupons));
   }, [coupons]);
 
   useEffect(() => {
-    localStorage.setItem('nandini_mart_reviews_v1', JSON.stringify(reviews));
+    localStorage.setItem('mnm_mart_reviews_v1', JSON.stringify(reviews));
   }, [reviews]);
 
   useEffect(() => {
-    localStorage.setItem('nandini_mart_delivery_settings_v1', JSON.stringify(deliverySettings));
+    localStorage.setItem('mnm_mart_delivery_settings_v1', JSON.stringify(deliverySettings));
   }, [deliverySettings]);
 
   useEffect(() => {
-    localStorage.setItem('nandini_mart_store_info_v1', JSON.stringify(storeInfo));
+    localStorage.setItem('mnm_mart_store_info_v1', JSON.stringify(storeInfo));
   }, [storeInfo]);
 
   const adminLogin = (email, password) => {

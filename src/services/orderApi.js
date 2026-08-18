@@ -1,6 +1,6 @@
 import { INITIAL_ORDERS } from '../data/initialData';
 
-const STORAGE_KEY = 'nandini_mart_orders_v1';
+const STORAGE_KEY = 'mnm_mart_orders_v1';
 const delay = (ms = 350) => new Promise(resolve => setTimeout(resolve, ms));
 
 const getStoredOrders = () => {
@@ -46,7 +46,7 @@ export const orderApi = {
     }
 
     const randomSuffix = Math.floor(10000 + Math.random() * 90000);
-    const orderId = `NDN-2026-${randomSuffix}`;
+    const orderId = `MNM-2026-${randomSuffix}`;
     const now = new Date();
 
     const newOrder = {
@@ -76,7 +76,7 @@ export const orderApi = {
           status: 'Order Placed',
           time: now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
           completed: true,
-          desc: 'Your grocery order was received by NANDINI MART'
+          desc: 'Your grocery order was received by MNM MART'
         },
         {
           status: 'Order Confirmed & Packed',

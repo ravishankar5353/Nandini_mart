@@ -31,7 +31,7 @@ export const CheckoutPage = () => {
   const [selectedUpiApp, setSelectedUpiApp] = useState('Google Pay');
   const [cardDetails, setCardDetails] = useState({
     number: '4532 •••• •••• 8821',
-    holder: 'Nandini Sharma',
+    holder: 'MNM User',
     expiry: '08/29',
     cvv: '•••'
   });

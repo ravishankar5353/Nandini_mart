@@ -1,5 +1,5 @@
 -- ============================================================
--- NANDINI MART — Supabase Database Schema
+-- MNM MART — Supabase Database Schema
 -- Run this entire file in your Supabase SQL Editor
 -- Dashboard → SQL Editor → New Query → Paste → Run
 -- ============================================================
@@ -105,8 +105,8 @@ CREATE TABLE IF NOT EXISTS coupons (
 );
 
 INSERT INTO coupons (code, discount, type, min_order, expiry, active, uses) VALUES
-  ('NANDINI50',     50,  'flat',     299,  '2026-12-31', TRUE, 12),
-  ('NANDINI100',   100,  'flat',     599,  '2026-12-31', TRUE,  7),
+  ('MNM50',     50,  'flat',     299,  '2026-12-31', TRUE, 12),
+  ('MNM100',   100,  'flat',     599,  '2026-12-31', TRUE,  7),
   ('FREEDELIVERY',  40,  'delivery',   0,  '2026-12-31', TRUE, 21)
 ON CONFLICT (code) DO NOTHING;
 

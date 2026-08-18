@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const u = await userApi.signup(data);
       setUser(u);
-      addToast(`Account created! Welcome to NANDINI MART, ${u.name}! 🎉`, 'success');
+      addToast(`Account created! Welcome to MNM MART, ${u.name}! 🎉`, 'success');
       setIsAuthModalOpen(false);
       return true;
     } catch (err) {

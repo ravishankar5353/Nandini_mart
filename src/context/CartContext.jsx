@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useToast } from './ToastContext';
 
 const CartContext = createContext();
-const CART_STORAGE_KEY = 'nandini_mart_cart_v1';
+const CART_STORAGE_KEY = 'mnm_mart_cart_v1';
 
 export const CartProvider = ({ children }) => {
   const [items, setItems] = useState(() => {
@@ -74,28 +74,28 @@ export const CartProvider = ({ children }) => {
 
   const applyCoupon = (code) => {
     const cleanCode = code.trim().toUpperCase();
-    if (cleanCode === 'NANDINI50') {
+    if (cleanCode === 'MNM50') {
       if (itemTotal < 299) {
-        addToast('Coupon NANDINI50 requires a minimum order of ₹299', 'warning');
+        addToast('Coupon MNM50 requires a minimum order of ₹299', 'warning');
         return false;
       }
-      setAppliedCoupon({ code: 'NANDINI50', discountType: 'fixed', value: 50, desc: '₹50 Instant Discount' });
-      addToast('Coupon NANDINI50 applied! Saved ₹50 🎉', 'success');
+      setAppliedCoupon({ code: 'MNM50', discountType: 'fixed', value: 50, desc: '₹50 Instant Discount' });
+      addToast('Coupon MNM50 applied! Saved ₹50 🎉', 'success');
       return true;
     } else if (cleanCode === 'FREEDELIVERY') {
       setAppliedCoupon({ code: 'FREEDELIVERY', discountType: 'delivery', value: 30, desc: 'Free Doorstep Delivery' });
       addToast('Coupon FREEDELIVERY applied! 🚚', 'success');
       return true;
-    } else if (cleanCode === 'NANDINI100') {
+    } else if (cleanCode === 'MNM100') {
       if (itemTotal < 599) {
-        addToast('Coupon NANDINI100 requires a minimum order of ₹599', 'warning');
+        addToast('Coupon MNM100 requires a minimum order of ₹599', 'warning');
         return false;
       }
-      setAppliedCoupon({ code: 'NANDINI100', discountType: 'fixed', value: 100, desc: '₹100 Mega Grocery Discount' });
-      addToast('Coupon NANDINI100 applied! Saved ₹100 🎉', 'success');
+      setAppliedCoupon({ code: 'MNM100', discountType: 'fixed', value: 100, desc: '₹100 Mega Grocery Discount' });
+      addToast('Coupon MNM100 applied! Saved ₹100 🎉', 'success');
       return true;
     } else {
-      addToast('Invalid coupon code. Try "NANDINI50" or "FREEDELIVERY"', 'error');
+      addToast('Invalid coupon code. Try "MNM50" or "FREEDELIVERY"', 'error');
       return false;
     }
   };

@@ -64,7 +64,7 @@ export const AdminDashboard = () => {
       {/* Page Header */}
       <div>
         <h1 className="text-2xl font-black text-white">Admin Dashboard</h1>
-        <p className="text-slate-500 text-sm mt-0.5">Overview of NANDINI MART operations</p>
+        <p className="text-slate-500 text-sm mt-0.5">Overview of MNM MART operations</p>
       </div>
 
       {/* Stats Grid */}
@@ -152,8 +152,8 @@ export const AdminDashboard = () => {
         {recentOrders.length === 0 && (
           <div className="px-5 py-3 flex items-center gap-3 hover:bg-white/5 transition-colors border-t border-white/5">
             <div className="min-w-0 flex-1">
-              <div className="text-white text-xs font-bold">NDN-2026-DEMO01</div>
-              <div className="text-slate-500 text-[11px] mt-0.5">Nandini Sharma</div>
+              <div className="text-white text-xs font-bold">MNM-2026-DEMO01</div>
+              <div className="text-slate-500 text-[11px] mt-0.5">MNM User</div>
             </div>
             <div className="text-right">
               <div className="text-emerald-400 text-xs font-black">₹699</div>

@@ -31,7 +31,7 @@ export const DoorstepDeliveryBadge = ({
               </span>
             </div>
             <p className="text-xs md:text-sm text-emerald-200/80 mt-0.5">
-              All NANDINI MART orders are carefully packaged & delivered directly to your doorstep. No store visits required!
+              All MNM MART orders are carefully packaged & delivered directly to your doorstep. No store visits required!
             </p>
           </div>
         </div>

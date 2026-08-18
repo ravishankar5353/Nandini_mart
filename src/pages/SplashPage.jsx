@@ -50,7 +50,7 @@ export const SplashPage = () => {
 
           <div>
             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight leading-none">
-              NANDINI<span className="text-emerald-400">MART</span>
+              MNM<span className="text-emerald-400">MART</span>
             </h1>
             <p className="text-emerald-300/80 font-semibold text-sm md:text-base mt-2 tracking-wide">
               Fresh Groceries. Easy Shopping. Delivered to Your Doorstep.
@@ -101,13 +101,13 @@ export const SplashPage = () => {
           </button>
         </div>
 
-        {/* Prominent Developed by NANDINI Badge */}
+        {/* Prominent Developed by MNM Team 🚀 Badge */}
         <div className="pt-6 border-t border-white/10">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-900/90 to-teal-900/90 border border-emerald-500/40 shadow-xl">
             <Sparkles className="w-4.5 h-4.5 text-emerald-400" />
             <span className="text-emerald-200 font-medium text-sm">Developed with</span>
             <Heart className="w-4 h-4 fill-rose-500 text-rose-500" />
-            <span className="text-white font-black text-base tracking-wide">by NANDINI</span>
+            <span className="text-white font-black text-base tracking-wide">by MNM Team 🚀</span>
           </div>
 
           <p className="text-slate-500 text-xs mt-3 font-medium">

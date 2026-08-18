@@ -20,15 +20,15 @@ const STATUS_COLORS = {
 // Fake demo orders if no real orders exist
 const DEMO_ORDERS = [
   {
-    id: 'NDN-2026-DEMO01', status: 'delivered',
-    customer_name: 'Nandini Sharma', customer_email: 'nandini@nandinimart.com', customer_phone: '9876543210',
+    id: 'MNM-2026-DEMO01', status: 'delivered',
+    customer_name: 'MNM User', customer_email: 'mnm@mnmmart.com', customer_phone: '9876543210',
     total: 699, payment_method: 'upi', created_at: new Date(Date.now() - 86400000).toISOString(),
-    delivery_address: { name: 'Nandini Sharma', line1: 'Flat 402, Green Meadows Heights', city: 'Bengaluru', pincode: '560038' },
+    delivery_address: { name: 'MNM User', line1: 'Flat 402, Green Meadows Heights', city: 'Bengaluru', pincode: '560038' },
     delivery_partner: 'Raju Kumar', estimated_time: '30-45 mins',
     items: [{ name: 'Fresh Kashmiri Red Apples', qty: 2, price: 169 }, { name: 'Tata Tea Gold', qty: 1, price: 361 }]
   },
   {
-    id: 'NDN-2026-DEMO02', status: 'out-for-delivery',
+    id: 'MNM-2026-DEMO02', status: 'out-for-delivery',
     customer_name: 'Priya Mehta', customer_email: 'priya@gmail.com', customer_phone: '9123456780',
     total: 499, payment_method: 'cod', created_at: new Date(Date.now() - 3600000).toISOString(),
     delivery_address: { name: 'Priya Mehta', line1: 'Plot 12, Jayanagar', city: 'Bengaluru', pincode: '560041' },
@@ -36,7 +36,7 @@ const DEMO_ORDERS = [
     items: [{ name: 'Organic Bananas', qty: 2, price: 49 }, { name: 'Basmati Rice', qty: 1, price: 401 }]
   },
   {
-    id: 'NDN-2026-DEMO03', status: 'confirmed',
+    id: 'MNM-2026-DEMO03', status: 'confirmed',
     customer_name: 'Rahul Verma', customer_email: 'rahul@gmail.com', customer_phone: '9988776655',
     total: 349, payment_method: 'card', created_at: new Date(Date.now() - 1800000).toISOString(),
     delivery_address: { name: 'Rahul Verma', line1: 'HSR Layout, Sector 2', city: 'Bengaluru', pincode: '560102' },
