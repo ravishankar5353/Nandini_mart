@@ -1,0 +1,122 @@
+export const CATEGORIES = [
+  {
+    id: 'fruits-vegetables',
+    name: 'Fruits & Vegetables',
+    shortName: 'Fruits & Veggies',
+    icon: '🥦',
+    slug: 'fruits-vegetables',
+    itemCount: 14,
+    description: 'Fresh farm-picked fruits, organic leafy greens, and crisp seasonal vegetables.',
+    bannerImage: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-emerald-500/20 to-green-500/10',
+    accentColor: 'text-emerald-700 bg-emerald-50 border-emerald-200'
+  },
+  {
+    id: 'dairy-eggs',
+    name: 'Dairy & Eggs',
+    shortName: 'Dairy & Eggs',
+    icon: '🥛',
+    slug: 'dairy-eggs',
+    itemCount: 8,
+    description: 'Fresh milk, farm eggs, creamy paneer, curd, artisanal butter, and cheese.',
+    bannerImage: 'https://images.unsplash.com/photo-1528750997573-59b89d56f4f7?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-blue-500/20 to-sky-500/10',
+    accentColor: 'text-blue-700 bg-blue-50 border-blue-200'
+  },
+  {
+    id: 'rice-grains',
+    name: 'Rice, Atta & Grains',
+    shortName: 'Rice & Grains',
+    icon: '🍚',
+    slug: 'rice-grains',
+    itemCount: 8,
+    description: 'Aromatic Basmati, staple Sona Masoori, 100% Whole Wheat Chakki Atta, and organic grains.',
+    bannerImage: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-amber-500/20 to-yellow-500/10',
+    accentColor: 'text-amber-700 bg-amber-50 border-amber-200'
+  },
+  {
+    id: 'pulses-dal',
+    name: 'Pulses & Dal',
+    shortName: 'Pulses & Dal',
+    icon: '🫘',
+    slug: 'pulses-dal',
+    itemCount: 7,
+    description: 'Unpolished protein-rich Toor Dal, Moong, Chana, Urad, Rajma, and organic Chickpeas.',
+    bannerImage: 'https://images.unsplash.com/photo-1599818816829-478648c69131?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-orange-500/20 to-amber-500/10',
+    accentColor: 'text-orange-700 bg-orange-50 border-orange-200'
+  },
+  {
+    id: 'snacks',
+    name: 'Snacks & Munchies',
+    shortName: 'Snacks',
+    icon: '🍪',
+    slug: 'snacks',
+    itemCount: 8,
+    description: 'Crispy potato wafers, crunchy namkeen, bakery cookies, instant noodles, and snacks.',
+    bannerImage: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-yellow-500/20 to-amber-500/10',
+    accentColor: 'text-yellow-800 bg-yellow-50 border-yellow-200'
+  },
+  {
+    id: 'beverages',
+    name: 'Beverages & Drinks',
+    shortName: 'Beverages',
+    icon: '🧃',
+    slug: 'beverages',
+    itemCount: 7,
+    description: 'Premium Assam tea, filter coffee, 100% real juices, energy drinks, and mineral water.',
+    bannerImage: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-teal-500/20 to-cyan-500/10',
+    accentColor: 'text-teal-700 bg-teal-50 border-teal-200'
+  },
+  {
+    id: 'cooking-essentials',
+    name: 'Cooking Essentials & Spices',
+    shortName: 'Cooking & Spices',
+    icon: '🧂',
+    slug: 'cooking-essentials',
+    itemCount: 9,
+    description: 'Pure desi ghee, cold-pressed oils, pure ground spices, iodized salt, and organic sugar.',
+    bannerImage: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-red-500/20 to-rose-500/10',
+    accentColor: 'text-red-700 bg-red-50 border-red-200'
+  },
+  {
+    id: 'personal-care',
+    name: 'Personal Care',
+    shortName: 'Personal Care',
+    icon: '🧴',
+    slug: 'personal-care',
+    itemCount: 6,
+    description: 'Nourishing soaps, shampoos, oral care essentials, handwashes, and skincare items.',
+    bannerImage: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-purple-500/20 to-indigo-500/10',
+    accentColor: 'text-purple-700 bg-purple-50 border-purple-200'
+  },
+  {
+    id: 'household',
+    name: 'Household & Cleaning',
+    shortName: 'Household',
+    icon: '🧹',
+    slug: 'household',
+    itemCount: 6,
+    description: 'Concentrated dishwash liquids, laundry detergents, floor cleaners, and garbage bags.',
+    bannerImage: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-cyan-500/20 to-blue-500/10',
+    accentColor: 'text-cyan-700 bg-cyan-50 border-cyan-200'
+  },
+  {
+    id: 'bakery-breakfast',
+    name: 'Bakery & Breakfast',
+    shortName: 'Bakery',
+    icon: '🍞',
+    slug: 'bakery-breakfast',
+    itemCount: 5,
+    description: 'Fresh multigrain breads, rolled oats, crunchy peanut butter, and pure organic honey.',
+    bannerImage: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80',
+    color: 'from-rose-500/20 to-pink-500/10',
+    accentColor: 'text-rose-700 bg-rose-50 border-rose-200'
+  }
+];
